@@ -1,0 +1,56 @@
+.puzzle-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.puzzle-board {
+  display: grid;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr);
+  border: 4px solid #333;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  -webkit-user-select: none;
+  user-select: none;
+  /* パズルボードの最大サイズを指定 */
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  aspect-ratio: var(--aspect-ratio); /* アスペクト比を維持 */
+}
+
+.puzzle-piece {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  box-sizing: border-box;
+  background-size: var(--bg-size-x) var(--bg-size-y); /* 背景画像サイズを調整 */
+  cursor: grab;
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.settings-container {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.settings-container label {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+}
+
+.settings-container select {
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}

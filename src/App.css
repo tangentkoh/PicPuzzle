@@ -1,0 +1,30 @@
+/* 変更後 */
+.App {
+  text-align: center;
+  padding: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+h1 {
+  color: #1a73e8; /* Googleの青色のような色 */
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+input[type="file"] {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  border: 2px dashed #ccc;
+  background-color: #fff;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 90%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+input[type="file"]:hover {
+  border-color: #007bff;
+}
