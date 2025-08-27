@@ -27,7 +27,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>写真deジグソーパズル</h1>
+      <h1>ピクパズル</h1>
       <input type="file" accept="image/*" onChange={handleImageUpload} />
 
       {image && (
